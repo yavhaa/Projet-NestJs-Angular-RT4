@@ -1,0 +1,25 @@
+.library-container {
+  display: grid;
+  grid-gap: 20px; /* spacing between squares */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* define grid columns based on book width */
+  grid-auto-rows: 300px; /* minimum height of rows */
+  height: 100vh; /* viewport height */
+  overflow-y: auto; /* enable vertical scrolling */
+}
+
+/* Custom scrollbar styles */
+.library-container::-webkit-scrollbar {
+  width: 10px; /* width of the scrollbar */
+}
+
+.library-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* color of the track */
+}
+
+.library-container::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scroll thumb */
+}
+
+.library-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* color of the scroll thumb on hover */
+}

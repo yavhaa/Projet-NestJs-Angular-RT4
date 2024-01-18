@@ -1,0 +1,11 @@
+<div class="book">
+    <img src="{{book.cover}}" alt="{{book.keywords}}" class="cover">
+    <div class="book-info">
+      <p class="title">{{book.title}}</p>
+      <p class="author">{{book.author}}</p>
+      <p class="keywords">{{book.keywords}}</p>
+    </div>
+    <div class="book-actions">
+      <button class="btn btn-dark mb-4" (click)="Details(book)">Details</button>
+    </div>
+</div>
